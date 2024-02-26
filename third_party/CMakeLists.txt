@@ -29,7 +29,6 @@ message(STATUS "Assimp targets: ${ASSIMP_TARGETS}")
 
 set_property(TARGET assimp PROPERTY FOLDER "ThirdParty")
 
-<<<<<<< HEAD
 # glm
 add_library(glm INTERFACE)
 set(GLM_DIR ${CMAKE_CURRENT_SOURCE_DIR}/glm)
@@ -45,8 +44,8 @@ target_compile_definitions(glm INTERFACE
 if(NOT CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
     target_compile_definitions(glm INTERFACE GLM_FORCE_CXX14)
 endif()
-=======
+
 # tinyxml2
 add_subdirectory(tinyxml2)
 set_property(TARGET tinyxml2 PROPERTY FOLDER "ThirdParty")
->>>>>>> 83cf8f6c757898865dae92f0dc50a6e4d70a8e8b
+
