@@ -27,7 +27,8 @@ add_subdirectory(assimp)
 get_directory_property(ASSIMP_TARGETS DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/assimp BUILDSYSTEM_TARGETS)
 message(STATUS "Assimp targets: ${ASSIMP_TARGETS}")
 
-
-
 set_property(TARGET assimp PROPERTY FOLDER "ThirdParty")
 
+# tinyxml2
+add_subdirectory(tinyxml2)
+set_property(TARGET tinyxml2 PROPERTY FOLDER "ThirdParty")
