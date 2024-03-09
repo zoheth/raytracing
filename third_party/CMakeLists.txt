@@ -4,7 +4,12 @@ project(third_party LANGUAGES C CXX)
 
 set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
 
+# fmt
+add_subdirectory(fmt)
+set_property(TARGET fmt PROPERTY FOLDER "ThirdParty")
+
 # spdlog
+set(SPDLOG_FMT_EXTERNAL ON)
 add_subdirectory(spdlog)
 set_property(TARGET spdlog PROPERTY FOLDER "ThirdParty")
 
